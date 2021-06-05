@@ -1,0 +1,226 @@
+body {
+    display:grid;
+    grid-template-columns: 25% 25% 25% 25%;
+    grid-template-rows: 25% 25% 25% 25%;
+    grid-template-areas: 
+    "header header header header"
+    "main main . sidebar"
+    "footer footer footer footer";
+    background: #F6E8E8;
+    height: 100vh;
+    font-family: 'Roboto', sans-serif;
+
+}
+header{
+    display: grid;
+    grid-row: 1;
+    grid-column:2 / span 2;
+    align-items: center;
+    justify-content: center;
+      
+}
+
+
+.me {
+    display: flex;
+    justify-content: center;
+    background-color: #FAF2F3;
+}
+
+main {
+    grid-row: 2 /span 2;
+    grid-column: 1 /span 4;
+}
+.pink-box{
+    display:grid;
+    grid-column:1 / span 1;
+    background-color: #CEA19B;
+    font-size: 42pt;
+    font-weight: bold;
+    text-align: left;
+    color:white; 
+    opacity:0.5;
+    line-height: 120%;
+    padding:0;
+    margin:0;
+    
+}
+nav{
+    grid-row: 1;
+    grid-column: 4;
+    margin-right: 1%;
+
+    
+}
+
+ul{
+    list-style-type: none;
+    text-decoration: none;
+    text-align:right;
+    
+}
+
+li{
+    line-height: 2.3;
+}
+
+a {
+    text-decoration: none;
+}
+
+
+#intro{
+    
+    background-color: #E3D4CD;
+
+}
+
+#intro button{
+    border:none;
+    background-color:#F6E8E8;
+    border-radius:12px;
+    font-size:16px;
+    box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+    margin-left:4%;
+    margin-bottom: 1.5%;
+    
+}
+
+/* -------ACCORDION MENU---------------------------- */
+/* Style the buttons that are used to open and close the accordion panel */
+.accordion {
+    background-color: #C9B5AE;
+    color: #444;
+    cursor: pointer;
+    padding: 18px;
+    width: 100%;
+    text-align: left;
+    border: none;
+    outline: none;
+    transition: 0.4s;
+  }
+  
+  /* Add a background color to the button if it is clicked on (add the .active class with JS), and when you move the mouse over it (hover) */
+.active, .accordion:hover {
+    background-color: #D08B86;
+  }
+  
+  /* Style the accordion panel. Note: hidden by default */
+.panel {
+    padding: 0 18px;
+    background-color: white;
+    display: none;
+    overflow: hidden;
+  }
+
+/* ---------------------------------------------------------------------- */
+  /* -----------------Project Modal Image CSS------------------------- */
+/* Style the Image Used to Trigger the Modal */
+.project-pic {
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.3s;
+  }
+  
+.project-pic:hover {opacity: 0.7;}
+  
+  /* The Modal (background) */
+  .modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    padding-top: 100px; /* Location of the box */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.9); /* Black w/ opacity */
+  }
+  
+  /* Modal Content (Image) */
+  .modal-content {
+    margin: auto;
+    display: block;
+    width: 80%;
+    max-width: 700px;
+  }
+  
+  /* Caption of Modal Image (Image Text) - Same Width as the Image */
+  #caption {
+    margin: auto;
+    display: block;
+    width: 80%;
+    max-width: 700px;
+    text-align: center;
+    color: #ccc;
+    padding: 10px 0;
+    height: 150px;
+  }
+  
+  /* Add Animation - Zoom in the Modal */
+  .modal-content, #caption {
+    animation-name: zoom;
+    animation-duration: 0.6s;
+  }
+  
+  @keyframes zoom {
+    from {transform:scale(0)}
+    to {transform:scale(1)}
+  }
+  
+  /* The Close Button */
+  .close {
+    position: absolute;
+    top: 15px;
+    right: 35px;
+    color: #f1f1f1;
+    font-size: 40px;
+    font-weight: bold;
+    transition: 0.3s;
+  }
+  
+  .close:hover,
+  .close:focus {
+    color: #bbb;
+    text-decoration: none;
+    cursor: pointer;
+  }
+  
+  /* 100% Image Width on Smaller Screens */
+  @media only screen and (max-width: 700px){
+    .modal-content {
+      width: 100%;
+    }
+  }
+
+  /* ------------------------------------------------- */
+#resume{
+    background-color: #FAF2F3;
+
+}
+
+footer{
+    grid-row: 4;
+    grid-column: 1/ span 4;
+      /* border: 1px solid red; */
+    padding-bottom: 20px;
+}
+    
+a {
+    color:#444;
+    margin-right: 2%;
+   
+}
+
+a:visited {
+    color: #C08982;
+  }
+
+  @media only screen and (max-width: 768px) {
+    /* For mobile phones: */
+    [class*="col-"] {
+      width: 100%;
+    }
+  }
