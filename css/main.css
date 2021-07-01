@@ -303,7 +303,13 @@ h3{
     height: 150px;
     min-height: 10%;
     border-top: 1px solid #E3D4CD;
-    margin-left: 10px;
+    margin-left: 250px;
+  
+}
+.resume-header{
+  font-family: 'Great Vibes'; 
+  font-size: 30pt;   
+
     
    
 
@@ -409,6 +415,20 @@ a:visited {
     [class*="col-"] {
       width: 100%;
     }
+
+    #about{
+      border: 1px solid red;
+      max-width: 30%;
+      text-align: left;
+      position: relative;
+      
+      z-index: 1;
+      margin-left: 100px;
+    }
+
+    #intro{
+      border: 1px solid red;
+    }
     .projects{
       margin-left: 10px;
       margin-right: 10px;
@@ -427,6 +447,7 @@ a:visited {
       text-align:left;
       padding-left: 10px;
       font-size: 16pt;
+      
       
     }
     .me{
