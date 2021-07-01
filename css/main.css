@@ -91,7 +91,7 @@ main {
   color: white;
   padding: 10px;
   margin-right: 10%;
-  margin-left: 0;
+  margin-left: -10px;
   z-index: -1;
   max-width: 10%;
   
