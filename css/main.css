@@ -417,7 +417,7 @@ a:visited {
     }
 
     #about{
-      border: 1px solid red;
+      
       max-width: 30%;
       text-align: left;
       position: relative;
@@ -426,9 +426,7 @@ a:visited {
       margin-left: 100px;
     }
 
-    #intro{
-      border: 1px solid red;
-    }
+  
     .projects{
       margin-left: 10px;
       margin-right: 10px;
