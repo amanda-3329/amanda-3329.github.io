@@ -14,24 +14,33 @@
 <style>
     @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400&display=swap');
     </style>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Noto+Sans+SC:wght@500&family=Oswald:wght@500&family=Playfair+Display&family=Prata&display=swap" rel="stylesheet">
     <title>Amanda Lowry</title>
 </head>
 <body>
     <header>
-        <h1>Amanda Lowry</h1>
+        <h1 class="name-h1">Amanda Lowry</h1>
                 
     </header>
     <div class="pink-box">
-        <h1>AMANDA</h1>
+       <span class="name"> <h1>Amanda
+           <br>
+           <br>
+           Lowry
+       </h1></span> 
     </div>
     <nav>
-        
-        <ul>
-            <a href="/"><li>Home</li></a>
-            <a href="#about"><li>About</li></a>
-            <a href="#projects"><li>Projects</li></a>
-            <a href="#contact"><li>Contact</li></a>
-        </ul></nav>   
+        <div class="nav-box">
+            <ul>
+                <a href="/"><li>Home</li></a>
+                <a href="#about"><li>About</li></a>
+                <a href="#projects"><li>Projects</li></a>
+                <a href="mailto:amanda.lowry329@gmail.com" target="_blank"><li>Contact</li></a>
+            </ul>
+        </div>
+    </nav> 
     
     <main>
         <div class="me">
@@ -40,26 +49,36 @@
                   </div>
         
         <div id="intro">
-            <h2>Software Languages</h2>
-            <button>Python</button>
-            <button>Django</button>
-            <button>MongoDB</button>
-            <button>Mongoose</button>
-            <button>React</button>
-            <button>PostgreSQL</button>
-            <button>Node</button>
-            <button>Express</button>
-            <button>jQuery</button>
-            <button>JavaScript</button>
-            <button>CSS</button>
-            <button>HTML</button>
+            <h2 class="sl-h2">Software Languages</h2>
+            <ul class="skills">
+                <li>Python</li>
+                <li>Django</li>
+                <li>MongoDB</li>
+                <li>Mongoose</li>
+                <li>React</li>
+                <li>PostgreSQL</li>
+                <li>Node</li>
+                <li>Express</li>
+                <li>jQuery</li>
+                <li>JavaScript</li>
+                <li>CSS</li>
+                <li>HTML</li>                
+            </ul>
+        </div>
+
+        <div id="about">
+            <h3 class="about-h3">About</h3>
+            <p>I am an enthusiastic collaborator who is detail oriented. I work as an integral part of a team with the goal to bring meaningful impact to the organization. Whether it is streamlining procedures and protocols, or creative problem solving, I enjoy creating and maintaining powerful content to keep your business moving forward.
+            
+            If you'd like to learn more about my roles, career, or more, please contact me.</p>
         </div>
         
         <div class="projects">
-            <h3>Projects</h3>
-            <button class="accordion">JavaScript Project</button>
+            <h3 class="projecth3">Projects</h3>
+            <p class="projecth4"> Click to Below to Open:</p>
+            <button class="accordion">Capstone Python Django Project</button>
             <div class="panel">
-                <img  class="project-pic" src="./images/js-racer.png" alt="JS Racer game with On Click event handlers to get team red or blue to the finish line" width="200" />
+                <img  class="project-pic" src="./images/HoneyBee-Img1.png" alt="Screenshot of Honeybee Bakery HomePage. White background with black nav bar, image of bakery and logo visible." width="200" />
                         <!-- The Modal -->
                  <div id="myModal" class="modal">
 
@@ -75,13 +94,14 @@
                     </div>
             <p>Click the image above for full-screen image.
                 <br>
-             <h3>Technologies used: </h3>HTML, CSS, Javascript.
+             <h3>Technologies used: </h3>Python Django, JavaScript, Materialize CSS, Google Maps API, HTML.
                 <br>
                 <br>
-                Sound on for this two-player computer keyboard racer game! This game uses images to create the background, headers, and other visual elements. When clicking on the "Begin" button on the top left, a countdown begins with music, ending in "GO!" One player presses the letter "r" to advance the red team rocket, and another player presses the letter "b" to advance the blue team to the finish line at the moon. Upon pressing "r", a rocketship sound also commences, adding to the auditory experience for the players. The first one to get to the moon hears a celebratory winner sound and a message appears saying which team one. 
+                Honeybee Bakery is a bakery and online order management site in which authenticated and authorized users can create/update/delete orders and view the order number and status, and the bakery admin can view all orders, test orders, and update the status for each order. 
 
             </p>
-                </div>
+                </div>    
+                    
     
         <button class="accordion">Mongoose/MongoDB Project</button>
             <div class="panel">
@@ -158,26 +178,42 @@
                 <br>
             <p>CakeCollector is a site for customers interested in tracking new cakes they have tried. From a bride to be or someone planning an event, they can upload details about the cake they tried, when it was tasted, what customization they would like to add or remove, and the origin of the cake! This site uses authentication and authorization, so users may log in, log out, and keep track of the cakes they have uploaded. 
             </p>
-                </div>
-                  
+                </div><button class="accordion">JavaScript Project</button>
+                <div class="panel">
+                    <img  class="project-pic" src="./images/js-racer.png" alt="JS Racer game with On Click event handlers to get team red or blue to the finish line" width="200" />
+                            <!-- The Modal -->
+                     <div id="myModal" class="modal">
+    
+                            <!-- The Close Button -->
+                            <span class="close" onclick="document.getElementById('myModal').style.display='none'">&times;</span>
+    
+                        
+                            <!-- Modal Content (The Image) -->
+                            <img class="modal-content" id="img01">
+                        
+                            <!-- Modal Caption (Image Text) -->
+                                <div id="caption"></div>
+                        </div>
+                <p>Click the image above for full-screen image.
+                    <br>
+                 <h3>Technologies used: </h3>HTML, CSS, Javascript.
+                    <br>
+                    <br>
+                    Sound on for this two-player computer keyboard racer game! This game uses images to create the background, headers, and other visual elements. When clicking on the "Begin" button on the top left, a countdown begins with music, ending in "GO!" One player presses the letter "r" to advance the red team rocket, and another player presses the letter "b" to advance the blue team to the finish line at the moon. Upon pressing "r", a rocketship sound also commences, adding to the auditory experience for the players. The first one to get to the moon hears a celebratory winner sound and a message appears saying which team one. 
+    
+                </p>
+                    </div>
         </div>
 
         
-        <div id="about">
-            <h3>About</h3>
-            <p>I am enthusiastic with an investigative eye and passionate about the details. Collaboration is my forte. I work as an integral part of a team with the goal to bring meaningful impact to the organization. Whether it is streamlining procedures and protocols, or thinking outside of the box to try something new, I enjoy creating and maintaining powerful content to keep your business moving forward.
-
-                If you'd like to learn more about my roles, career, or more, please send me a message.</p>
-        </div>
+        
 
         <div id="resume">
             <h3>Resume</h3>
-            <a href="https://docs.google.com/document/d/1Y6rj-f5voOeleqtFoyKC2GaGCBWHEjpElxFLtgvRUvI/edit?usp=sharing" target="_blank">Check Out My Resume</a>
+            <a class="checkout" href="images/Amanda-Lowry-Resume.pdf" target="_blank">Check Out My Resume</a>
         </div>
 
-
-    <footer>
-        <div id="contact">
+        <!-- <div id="contact">
             <form action=""><h3>Contact Me</h3 method="post">
             <a href="https://www.linkedin.com/in/amandaslowry" target="_blank">LinkedIn</a>
             <a href="https://git.generalassemb.ly/amanda" target="_blank">GitHub</a>
@@ -201,14 +237,15 @@
 
 
             </form>
-                
+                 -->
             </div>            
         </main>
-            </footer>
     
+     
+        
+        
+    </body>
 
-    
-</body>
 
 
 
