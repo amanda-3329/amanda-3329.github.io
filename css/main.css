@@ -178,7 +178,7 @@ h3{
 }
 
 .checkout{
-  margin-left: 255px;
+  margin-left: 10px;
 }
 
 
@@ -303,6 +303,7 @@ h3{
     height: 150px;
     min-height: 10%;
     border-top: 1px solid #E3D4CD;
+    margin-left: 10px;
     
    
 
