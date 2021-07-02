@@ -1,5 +1,5 @@
 
-# Portfoli
+# Portfolio
 
 My beginner portfolio!
 
